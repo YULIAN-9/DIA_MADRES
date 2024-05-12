@@ -1,0 +1,167 @@
+/* Set the colour and the position of the background and the elements */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('imagen/4.jpg');
+  background-size: cover; /* Ajusta el tamaño de las imágenes para que cubran todo el body */
+  background-position: center; /* Centra las imágenes */
+  background-repeat: no-repeat; /* Evita que las imágenes se repitan */
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+.valentines {
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+  animation: up 3s linear infinite;
+}
+
+/* Style the envelope and the card */
+
+.envelope {
+  position: relative;
+  width: 500px;
+  height: 280px;
+  background-color: #f08080;
+}
+
+.envelope:before {
+  background-color: #f08080;
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 360px;
+  transform: rotate(45deg);
+  top: -178px;
+  left: 74px;
+  border-radius: 30px 0 0 0;
+}
+
+.card {
+  position: absolute;
+  background-color: #eae2b7;
+  width: 470px;
+  height: 270px;
+  top: 5px;
+  left: 15px;
+  box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  border: 3px solid #003049;
+  border-style: dotted;
+  width: 440px;
+  height: 240px;
+  left: 12px;
+  top: 12px;
+}
+
+.text {
+  position: absolute;
+  font-family:  'Brush Script MT', cursive;
+  font-size: 88px;
+  text-align: center;
+  line-height: 65px;
+  top: 39px;
+  left: 145px;
+  color: #003049;
+}
+
+.heart {
+  background-color: #d62828;
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px;
+  position: relative;
+  top: 110px;
+  left: 45px;
+  transform: rotate(-45deg);
+  width: 40px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #d62828;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  width: 40px;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+.front {
+  position: absolute;
+  border-right: 310px solid #f4978e;
+  border-top: 210px solid transparent;
+  border-bottom: 65px solid transparent;
+  left: 190px;
+  top: 3px;
+  width: 0;
+  height: 0;
+  z-index: 10;
+}
+/*coding by @coding_seru*/
+.front:before {
+  position: absolute;
+  content: "";
+  border-left: 505px solid #f8ad9d;
+  border-top: 270px solid transparent;
+  left: -190px;
+  top: -204px;
+  width: 0;
+  height: 0;
+}
+
+/* Add the shadow */
+.shadow {
+  position: fixed;
+  width: 35em;
+  height: 5em;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  filter: blur(0.2em);
+}
+
+/* To move the envelope up and down */
+@keyframes up {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* to scale the shadow */
+@keyframes scale {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.85);
+  }
+}
