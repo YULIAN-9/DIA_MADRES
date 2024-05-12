@@ -7,9 +7,7 @@ body {
   align-items: center;
   height: 100vh;
   background-image: url('imagen/4.jpg');
-  background-size: cover; /* Ajusta el tamaño de las imágenes para que cubran todo el body */
-  background-position: center; /* Centra las imágenes */
-  background-repeat: no-repeat; /* Evita que las imágenes se repitan */
+  background-size: auto; /* Ajusta el tamaño de las imágenes para que cubran todo el body */
 }
 
 .container {
