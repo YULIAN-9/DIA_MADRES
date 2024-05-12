@@ -6,8 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('imagen/4.JPG'),
-                    url('imagen/1.jpg');
+  background-image: url('imagen/4.JPG');
 }
 
 .container {
