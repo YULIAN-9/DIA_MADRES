@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('https://yulian-9.github.io/DIA_MADRES/imagen/4.JPG');
+  background-image: url('imagen/4.JPG');
   background-size: auto; /* Ajusta el tamaño de las imágenes para que cubran todo el body */
 }
 
